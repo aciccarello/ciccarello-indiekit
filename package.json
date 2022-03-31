@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "paulrobertlloyd-indiekit",
+  "name": "ciccarello-indiekit",
   "version": "1.0.0",
   "description": "Indiekit server for my personal website",
   "keywords": [
@@ -8,21 +8,22 @@
     "indieweb"
   ],
   "author": {
-    "name": "Paul Robert Lloyd",
-    "url": "https://paulrobertlloyd.com"
+    "name": "Anthony Ciccarello",
+    "url": "https://www.ciccarello.me"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paulrobertlloyd/paulrobertlloyd-indiekit.git"
+    "url": "git+https://github.com/aciccarello/ciccarello-indiekit.git"
   },
-  "homepage": "https://indiekit.paulrobertlloyd.com",
+  "homepage": "https://indiekit.ciccarello.me",
   "engines": {
     "node": "16.x"
   },
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "DEBUG=* node index.js"
+    "start": "DEBUG=* node index.js",
+    "start:local": "node -r dotenv/config index.js"
   },
   "dependencies": {
     "@indiekit/indiekit": "^0.3.0",
@@ -31,5 +32,8 @@
     "@indiekit/syndicator-mastodon": "^0.3.0",
     "@indiekit/syndicator-twitter": "^0.3.0",
     "lodash": "^4.3.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0"
   }
 }
