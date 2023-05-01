@@ -1,0 +1,32 @@
+{
+  "type": "entry",
+  "post-type": "like",
+  "like-of": "https://jamesg.blog/2023/04/18/source-code-folder-names/",
+  "visibility": "public",
+  "post-status": "draft",
+  "references": {
+    "https://jamesg.blog/2023/04/18/source-code-folder-names/": {
+      "url": "https://jamesg.blog/2023/04/18/source-code-folder-names/",
+      "children": [
+        {
+          "type": "card",
+          "name": "James' Coffee Blog ☕",
+          "url": "https://jamesg.blog"
+        },
+        {
+          "type": "entry",
+          "name": "My source code root folder name",
+          "published": "2023-04-18T00:00:00",
+          "category": "Coding",
+          "content": {
+            "html": "<p>I like seeing what people call the root folder in which they store their source code. This is the folder where all — or a lot of — your projects are stored. In my case, my programming projects go in a folder called <code>src</code>. (Although I have a strange habit of nesting personal projects that are related to each other. I believe my source code files are in need of a spring clean.)</p>\n<p>That long parenthetical notwithstanding, I find the name <code>src</code> cool. It’s a short way of saying source code; apt, simple, easy to type. Furthermore, <code>src</code> is different to the names of the other folders in my root directory, which makes autocomplete a breeze when I’m tying in my terminal to navigate to a source code folder.</p>\n<p>A common example I have seen is <code>Code</code>, or variants thereof. I’m curious: if you code, what do you call the root folder in which you store your source code?</p>",
+            "text": "I like seeing what people call the root folder in which they store their source code. This is the folder where all — or a lot of — your projects are stored. In my case, my programming projects go in a folder called src. (Although I have a strange habit of nesting personal projects that are related to each other. I believe my source code files are in need of a spring clean.)\nThat long parenthetical notwithstanding, I find the name src cool. It’s a short way of saying source code; apt, simple, easy to type. Furthermore, src is different to the names of the other folders in my root directory, which makes autocomplete a breeze when I’m tying in my terminal to navigate to a source code folder.\nA common example I have seen is Code, or variants thereof. I’m curious: if you code, what do you call the root folder in which you store your source code?"
+          }
+        }
+      ]
+    }
+  },
+  "mp-slug": "abcd",
+  "published": "2023-04-29T06:00:13.378Z",
+  "url": "http://localhost:8080/posts/2023/04/29/abcd"
+}

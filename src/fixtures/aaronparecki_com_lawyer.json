@@ -1,0 +1,183 @@
+{
+  "type": "entry",
+  "post-type": "like",
+  "like-of": "https://aaronparecki.com/2023/04/24/8/lawyer",
+  "mp-slug": "aaron-lawyer",
+  "visibility": "public",
+  "post-status": "draft",
+  "references": {
+    "https://aaronparecki.com/2023/04/24/8/lawyer": {
+      "url": "https://aaronparecki.com/2023/04/24/8/lawyer",
+      "children": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "entry",
+          "author": {
+            "type": "card",
+            "url": "https://aaronparecki.com/",
+            "photo": [
+              {
+                "alt": "Aaron Parecki",
+                "url": "https://aaronparecki.com/images/profile.jpg"
+              }
+            ],
+            "name": "Aaron Parecki"
+          },
+          "content": {
+            "html": "In retrospect, I probably didn't need to include \"but I am not a lawyer\" in an email to our lawyers",
+            "text": "In retrospect, I probably didn't need to include \"but I am not a lawyer\" in an email to our lawyers"
+          },
+          "location": {
+            "type": "adr",
+            "locality": "Portland",
+            "region": "Oregon",
+            "country": "USA"
+          },
+          "url": "https://aaronparecki.com/2023/04/24/8/lawyer",
+          "published": "2023-04-24T14:12:20-07:00",
+          "syndication": [
+            "at://did:plc:s2koow7r6t7tozgd4slc3dsg/app.bsky.feed.post/3ju5hvccis32q",
+            "https://micro.blog/aaronpk/18625298"
+          ],
+          "pk-num-likes": "15",
+          "pk-num-reposts": "1",
+          "pk-num-replies": "3",
+          "like": {
+            "children": [
+              {
+                "type": "cite",
+                "url": [
+                  "https://emacs.ch/users/skybert#likes/56653",
+                  "https://emacs.ch/users/skybert"
+                ],
+                "author": {
+                  "type": "card",
+                  "photo": "https://aaronparecki.com/assets/images/no-profile-photo.png",
+                  "name": ""
+                },
+                "name": "15 of these cite elements"
+              }
+            ]
+          },
+          "repost": {
+            "type": "cite",
+            "url": [
+              "https://tdd.social/users/CodingItWrong/statuses/110256727388551917/activity",
+              "https://tdd.social/users/CodingItWrong"
+            ],
+            "author": {
+              "type": "card",
+              "photo": "https://aaronparecki.com/assets/images/no-profile-photo.png",
+              "name": ""
+            },
+            "name": "Josh Justice"
+          },
+          "comment": {
+            "children": [
+              {
+                "type": "cite",
+                "author": {
+                  "type": "card",
+                  "photo": "https://aaronparecki.com/assets/images/no-profile-photo.png",
+                  "name": "dominikhoecht",
+                  "url": "https://micro.blog/dominikhoecht"
+                },
+                "content": {
+                  "html": "<p><a href=\"https://micro.blog/aaronpk\" rel=\"nofollow\">@aaronpk</a> 😂</p>",
+                  "text": "@aaronpk 😂"
+                },
+                "url": "https://micro.blog/dominikhoecht/18694091",
+                "published": "2023-04-27T15:41:21+00:00"
+              },
+              {
+                "type": "cite",
+                "author": {
+                  "type": "card",
+                  "photo": "https://aaronparecki.com/assets/images/no-profile-photo.png",
+                  "name": "carpetbomberz",
+                  "url": "https://mastodon.online/users/carpetbomberz"
+                },
+                "content": {
+                  "html": "<p><span class=\"h-card\"><a href=\"https://aaronparecki.com/aaronpk\" class=\"u-url\">@<span>aaronpk</span></a></span> In your defense you are most authoritative on the many subjects upon which you expound. I'm thinking back to the episode on ContentID fer' instance. 😄</p>",
+                  "text": "@aaronpk In your defense you are most authoritative on the many subjects upon which you expound. I'm thinking back to the episode on ContentID fer' instance. 😄"
+                },
+                "url": "https://mastodon.online/@carpetbomberz/110256111311133962",
+                "published": "2023-04-24T15:19:05-07:00",
+                "children": [
+                  {
+                    "type": "card",
+                    "url": "https://aaronparecki.com/aaronpk",
+                    "name": "@aaronpk"
+                  }
+                ]
+              },
+              {
+                "type": "cite",
+                "author": {
+                  "type": "card",
+                  "photo": "https://aaronparecki.com/assets/images/no-profile-photo.png",
+                  "name": "lmika",
+                  "url": "https://micro.blog/lmika"
+                },
+                "content": {
+                  "html": "<p><a href=\"https://micro.blog/aaronpk\" rel=\"nofollow\">@aaronpk</a> Just hope that they don’t reply with “I’m not a lawyer either”. 😀</p>",
+                  "text": "@aaronpk Just hope that they don’t reply with “I’m not a lawyer either”. 😀"
+                },
+                "url": "https://micro.blog/lmika/18625632",
+                "published": "2023-04-24T21:45:09+00:00"
+              }
+            ]
+          }
+        },
+        {
+          "type": "card",
+          "url": "https://aaronparecki.com/",
+          "uid": "https://aaronparecki.com/",
+          "photo": "https://aaronparecki.com/images/profile.jpg",
+          "note": "Hi, I'm Aaron Parecki, Senior Security Architect at Okta, and co-founder of\nIndieWebCamp.\nI maintain oauth.net, write and consult about OAuth, and\nparticipate in the OAuth Working Group at the IETF. I also help people learn about video production and livestreaming and dabble in product design.\n\nI've been tracking my location since 2008 and I wrote 100 songs in 100 days.\nI've spoken at conferences around the world about\nowning your data,\nOAuth,\nquantified self,\nand explained why R is a vowel. Read more.",
+          "name": "Aaron Parecki",
+          "bday": "--12-28",
+          "street-address": "PO Box 12433",
+          "locality": "Portland",
+          "region": "Oregon",
+          "country-name": "USA",
+          "postal-code": "97212",
+          "org": {
+            "children": [
+              {
+                "type": "card",
+                "photo": "https://aaronparecki.com/images/okta.png",
+                "role": "Security Architect",
+                "url": "https://developer.okta.com/",
+                "name": "Okta"
+              },
+              {
+                "type": "card",
+                "photo": "https://aaronparecki.com/images/indiewebcamp.png",
+                "url": "https://indieweb.org/",
+                "name": "IndieWebCamp",
+                "role": "Founder"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "published": "2023-04-28T06:39:26.637Z",
+  "url": "http://localhost:8080/posts/2023/04/28/aaron-lawyer"
+}

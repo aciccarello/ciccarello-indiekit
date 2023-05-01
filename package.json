@@ -17,23 +17,24 @@
   },
   "homepage": "https://indiekit.ciccarello.me",
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "DEBUG=* node index.js",
-    "start:local": "node -r dotenv/config index.js"
+    "start": "TZ=utc indiekit serve",
+    "test": "jest"
   },
   "dependencies": {
-    "@indiekit/indiekit": "^0.3.0",
-    "@indiekit/store-github": "^0.3.0",
-    "@indiekit/syndicator-internet-archive": "^0.3.0",
-    "@indiekit/syndicator-mastodon": "^0.3.0",
-    "@indiekit/syndicator-twitter": "^0.3.0",
-    "lodash": "^4.3.1"
+    "@indiekit/endpoint-media": "^1.0.0-beta.1",
+    "@indiekit/indiekit": "^1.0.0-beta.2",
+    "@indiekit/store-file-system": "^1.0.0-beta.1",
+    "@indiekit/store-github": "^1.0.0-beta.1",
+    "@indiekit/syndicator-internet-archive": "^1.0.0-beta.1",
+    "jest": "^29.5.0",
+    "lodash": "^4.3.1",
+    "yaml": "^2.2.2"
   },
   "devDependencies": {
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.3"
   }
 }

@@ -1,0 +1,36 @@
+{
+  "mp-slug": "davids-checkin",
+  "published": "2023-04-28T06:46:25.459Z",
+  "url": "http://localhost:8080/posts/2023/04/28/davids-checkin",
+  "type": "entry",
+  "post-type": "bookmark",
+  "bookmark-of": "https://david.shanske.com/2022/11/12/5771/",
+  "name": "David's Checkin",
+  "visibility": "public",
+  "post-status": "draft",
+  "references": {
+    "https://david.shanske.com/2022/11/12/5771/": {
+      "type": "entry",
+      "published": "2022-11-12T21:18:14-05:00",
+      "url": "https://david.shanske.com/2022/11/12/5771/",
+      "syndication": [
+        "https://www.swarmapp.com/user/454146796/checkin/637053e63c475d66ba734df4"
+      ],
+      "author": {
+        "type": "card",
+        "name": "David Shanske",
+        "url": "https://david.shanske.com/",
+        "photo": "https://david.shanske.com/avatar/dshanske?s=42"
+      },
+      "checkin": {
+        "type": "card",
+        "name": "Aspire Lounge San Diego",
+        "url": "https://david.shanske.com/venue/aspire-lounge/"
+      },
+      "post-type": "checkin",
+      "rels": {
+        "canonical": "https://david.shanske.com/2022/11/12/5771/"
+      }
+    }
+  }
+}
