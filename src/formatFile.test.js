@@ -1,4 +1,6 @@
 const formatFile = require("./formatFile.js");
+const htmlMetadataMock = require("html-metadata");
+jest.mock("html-metadata", () => jest.fn().mockResolvedValue());
 
 beforeAll(() => {
   jest.spyOn(console, "log").mockReturnValue();
@@ -8,8 +10,8 @@ afterAll(() => {
   jest.restoreAllMocks();
 });
 
-it("should ignore properties from Aaron's post", () => {
-  expect(formatFile(require("./fixtures/aaronparecki_com_lawyer.json")))
+it("should ignore properties from Aaron's post", async () => {
+  expect(await formatFile(require("./fixtures/aaronparecki_com_lawyer.json")))
     .toMatchInlineSnapshot(`
 "---
 date: 2023-04-28T06:39:26.637Z
@@ -39,9 +41,9 @@ indiekit_post-type: like
 `);
 });
 
-it("should process find the author in james' post", () => {
-  expect(formatFile(require("./fixtures/jamesg_blog_folder_names.json"))).
-toMatchInlineSnapshot(`
+it("should process find the author in james' post", async () => {
+  expect(await formatFile(require("./fixtures/jamesg_blog_folder_names.json")))
+    .toMatchInlineSnapshot(`
 "---
 date: 2023-04-29T06:00:13.378Z
 eleventyExcludeFromCollections: draft
@@ -75,9 +77,9 @@ indiekit_post-type: like
 `);
 });
 
-it("should process David's checkin", () => {
-  expect(formatFile(require("./fixtures/david_shanske_com_checkin.json"))).
-toMatchInlineSnapshot(`
+it("should process David's checkin", async () => {
+  expect(await formatFile(require("./fixtures/david_shanske_com_checkin.json")))
+    .toMatchInlineSnapshot(`
 "---
 date: 2023-04-28T06:46:25.459Z
 eleventyExcludeFromCollections: draft
@@ -103,8 +105,8 @@ indiekit_post-type: bookmark
 `);
 });
 
-it("should modify the content from marty's post", () => {
-  expect(formatFile(require("./fixtures/martymcgui_re_go-time.json"))).
+it("should modify the content from marty's post", async () => {
+  expect(await formatFile(require("./fixtures/martymcgui_re_go-time.json"))).
 toMatchInlineSnapshot(`
 "---
 date: 2023-05-01T00:03:00.564Z
@@ -140,6 +142,48 @@ references:
         
           Responses that…
 indiekit_post-type: bookmark
+
+---
+
+
+"
+`);
+});
+
+it("should fill in references from mastodon", async () => {
+  htmlMetadataMock.mockResolvedValue(
+    require("./fixtures/nick_nisi_mastodon.json")
+  );
+
+  expect(
+await formatFile({
+  type: "entry",
+  "post-type": "like",
+  "like-of": "https://fediverse.nicknisi.com/@nicknisi/109991177881690708",
+  visibility: "public",
+  "post-status": "draft",
+  "mp-slug": "abcd",
+  published: "2023-04-29T06:00:13.378Z",
+  url: "http://localhost:8080/posts/2023/04/29/abcd"
+})).
+toMatchInlineSnapshot(`
+"---
+date: 2023-04-29T06:00:13.378Z
+eleventyExcludeFromCollections: draft
+slug: abcd
+like-of: https://fediverse.nicknisi.com/@nicknisi/109991177881690708
+references:
+  https://fediverse.nicknisi.com/@nicknisi/109991177881690708:
+    url: https://fediverse.nicknisi.com/@nicknisi/109991177881690708
+    name: "Nick Nisi :nicknisi: (@nicknisi@nicknisi.com)"
+    published: 2023-03-09T03:23:02Z
+    author:
+      name: Nick Nisi
+    content: |-
+      Attached: 1 image
+
+      Sometimes Slack is fun.
+indiekit_post-type: like
 
 ---
 
