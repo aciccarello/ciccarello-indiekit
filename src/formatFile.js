@@ -19,25 +19,30 @@ module.exports = async function formatFile(properties) {
       postContent = "";
     }
 
-    const { published, deleted, photo, references = {} } = properties;
+    const {
+      published,
+      deleted,
+      photo,
+      references: referencesMap = {},
+    } = properties;
 
     const { url: image, alt: image_alt, ...image_other } = photo || {};
 
     // Try to normalize references to fix common errors on people's sites
-    for (const url in references) {
-      let entry = references[url];
+    const references = Object.entries(referencesMap).map(([url, ref]) => {
+      let entry = ref;
       if (!entry.type && entry.children) {
         // Find main entry
         entry = entry.children.find(({ type }) => type === "entry");
       }
       if (!entry) {
-        console.warn("Entry not found on referenced page", url, entry);
-        break;
+        console.warn("Entry not found on referenced page", ref.url, ref);
+        return ref;
       }
-      let { author, content } = entry;
+      let { author, content, "post-type": postType } = entry;
       if (!author) {
         // Assume top level card is the author
-        author = references[url].children.find(({ type }) => type === "card");
+        author = entry.children.find(({ type }) => type === "card");
       }
       if (content?.text) {
         // Don't need both the HTML and text representation of content
@@ -51,40 +56,42 @@ module.exports = async function formatFile(properties) {
       // Some sites include extra properties like comments that I don't need
       const { name, type, published, updated } = entry;
 
-      references[url] = {
-        url,
+      return {
+        url: ref.url ?? url,
         name,
+        "post-type": postType,
         type,
         published,
         updated,
         author,
         content,
       };
-    }
+    });
 
     // Retrieve missing metadata using opengraph
-    const possibleReferences = [
-      properties["bookmark-of"],
-      properties["like-of"],
-      properties["repost-of"],
-      properties["in-reply-to"],
-    ]
-      .filter((url) => url && !references[url])
+    const possibleReferences = Array.from(
+      new Set([
+        properties["bookmark-of"],
+        properties["like-of"],
+        properties["repost-of"],
+        properties["in-reply-to"],
+      ])
+    )
+      .filter((url) => url && !references?.find((refUrl) => url === refUrl))
       .map(async (url) => {
         try {
           const metadata = await htmlMetadata(url);
           console.log("Found the following metadata for url", url, metadata);
           const { general, jsonLd, openGraph } = metadata;
           const authorName =
-            jsonLd?.author?.name ||
-            general?.author ||
-            // Look for Mastodon user name in title
-            // Identify by suffix of (@username@domain.com)
-            // Exclude :emoji: codes
-            openGraph?.title
-              .match(/([^:\n]*)(?:\:?.*\:?) \(@.+@.+\)/)?.[1]
-              ?.trim?.();
-          const authorUrl = jsonLd?.author?.url || openGraph?.author;
+            jsonLd?.author?.name || general?.author || openGraph?.author;
+          // Look for Mastodon user name in title
+          // Identify by suffix of (@username@domain.com)
+          // Exclude :emoji: codes
+          openGraph?.title
+            ?.match(/([^:\n]*)(?:\:?.*\:?) \(@.+@.+\)/)?.[1]
+            ?.trim?.();
+          const authorUrl = jsonLd?.author?.url;
           const author =
             authorName || authorUrl
               ? { name: authorName, url: authorUrl }
@@ -98,7 +105,7 @@ module.exports = async function formatFile(properties) {
             content = content.slice(0, 500) + "…";
           }
 
-          references[url] = {
+          references.push({
             url,
             name: (
               jsonLd?.headline ||
@@ -109,7 +116,7 @@ module.exports = async function formatFile(properties) {
             updated: jsonLd?.dateModified || openGraph?.modified_time,
             author,
             content,
-          };
+          });
         } catch (e) {
           console.warn(
             `Unable to scrape URL ${url} because an error was encountered`,

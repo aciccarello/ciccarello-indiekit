@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should fill in references from mastodon 1`] = `
+"---
+date: 2023-04-29T06:00:13.378Z
+eleventyExcludeFromCollections: draft
+slug: abcd
+like-of: https://fediverse.nicknisi.com/@nicknisi/109991177881690708
+references:
+  - url: https://fediverse.nicknisi.com/@nicknisi/109991177881690708
+    name: "Nick Nisi :nicknisi: (@nicknisi@nicknisi.com)"
+    published: 2023-03-09T03:23:02Z
+    content: |-
+      Attached: 1 image
+
+      Sometimes Slack is fun.
+indiekit_post-type: like
+
+---
+
+
+"
+`;
+
+exports[`should ignore properties from Aaron's post 1`] = `
+"---
+date: 2023-04-28T06:39:26.637Z
+eleventyExcludeFromCollections: draft
+slug: aaron-lawyer
+like-of: https://aaronparecki.com/2023/04/24/8/lawyer
+references:
+  - url: https://aaronparecki.com/2023/04/24/8/lawyer
+    type: entry
+    published: 2023-04-24T14:12:20-07:00
+    author:
+      type: card
+      url: https://aaronparecki.com/
+      photo:
+        - alt: Aaron Parecki
+          url: https://aaronparecki.com/images/profile.jpg
+      name: Aaron Parecki
+    content: In retrospect, I probably didn't need to include "but I am not a
+      lawyer" in an email to our lawyers
+  - url: https://aaronparecki.com/2023/04/24/8/lawyer
+indiekit_post-type: like
+
+---
+
+
+"
+`;
+
+exports[`should modify the content from marty's post 1`] = `
+"---
+date: 2023-05-01T00:03:00.564Z
+title: Go time time
+slug: go-again-time
+bookmark-of: https://martymcgui.re/2023/03/19/go-time/
+references:
+  - url: https://martymcgui.re/2023/03/19/go-time/
+    name: Go Time
+    type: entry
+    published: 2023-03-19T13:14:22-0400
+    author:
+      type: card
+      name: Marty McGuire
+      url: https://martymcgui.re/
+      photo:
+        - alt: Marty McGuire
+          url: https://martymcgui.re/images/logo.jpg
+    content: >-
+      This is one of those posts about a tech issue comes up from time to time
+      for me that I find difficult to search for. Sorry (not sorry) if it is not
+      helpful to anyone else!
+
+        Too much context about my site building process
+
+        
+
+      My site is built with Hugo, a static site generator known for being quite fast, and with a powerful (and challenging) templating system.
+
+      I use my site for lots of stuff, which sometimes means showing content from other sites in my posts. For example:
+
+        
+          Responses that…
+  - url: https://martymcgui.re/2023/03/19/go-time/
+indiekit_post-type: bookmark
+
+---
+
+
+"
+`;
+
+exports[`should process David's checkin 1`] = `
+"---
+date: 2023-04-28T06:46:25.459Z
+eleventyExcludeFromCollections: draft
+title: David's Checkin
+slug: davids-checkin
+bookmark-of: https://david.shanske.com/2022/11/12/5771/
+references:
+  - url: https://david.shanske.com/2022/11/12/5771/
+    post-type: checkin
+    type: entry
+    published: 2022-11-12T21:18:14-05:00
+    author:
+      type: card
+      name: David Shanske
+      url: https://david.shanske.com/
+      photo: https://david.shanske.com/avatar/dshanske?s=42
+  - url: https://david.shanske.com/2022/11/12/5771/
+indiekit_post-type: bookmark
+
+---
+
+
+"
+`;
