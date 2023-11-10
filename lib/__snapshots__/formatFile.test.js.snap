@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should create a photo post 1`] = `
+"---
+date: 2023-11-09T10:10:00.000Z
+eleventyExcludeFromCollections: draft
+slug: noyzk
+image: /assets/img/8pzun.jpg
+image_alt: pumpkin bread on cutting board
+references: []
+indiekit_post-type: photo
+
+---
+
+Draft post
+
+"
+`;
+
 exports[`should fill in references from mastodon 1`] = `
 "---
 date: 2023-04-29T06:00:13.378Z
@@ -41,7 +58,6 @@ references:
       name: Aaron Parecki
     content: In retrospect, I probably didn't need to include "but I am not a
       lawyer" in an email to our lawyers
-  - url: https://aaronparecki.com/2023/04/24/8/lawyer
 indiekit_post-type: like
 
 ---
@@ -83,7 +99,6 @@ references:
 
         
           Responses that…
-  - url: https://martymcgui.re/2023/03/19/go-time/
 indiekit_post-type: bookmark
 
 ---
@@ -109,8 +124,35 @@ references:
       name: David Shanske
       url: https://david.shanske.com/
       photo: https://david.shanske.com/avatar/dshanske?s=42
-  - url: https://david.shanske.com/2022/11/12/5771/
 indiekit_post-type: bookmark
+
+---
+
+
+"
+`;
+
+exports[`should process find the author in james' post 1`] = `
+"---
+date: 2023-04-29T06:00:13.378Z
+eleventyExcludeFromCollections: draft
+slug: abcd
+like-of: https://jamesg.blog/2023/04/18/source-code-folder-names/
+references:
+  - url: https://jamesg.blog/2023/04/18/source-code-folder-names/
+    name: My source code root folder name
+    type: entry
+    published: 2023-04-18T00:00:00
+    content: >-
+      I like seeing what people call the root folder in which they store their
+      source code. This is the folder where all — or a lot of — your projects
+      are stored. In my case, my programming projects go in a folder called src.
+      (Although I have a strange habit of nesting personal projects that are
+      related to each other. I believe my source code files are in need of a
+      spring clean.)
+
+      That long parenthetical notwithstanding, I find the name src cool. It’s a short way of saying source code; apt, simple, eas…
+indiekit_post-type: like
 
 ---
 

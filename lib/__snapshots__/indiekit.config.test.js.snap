@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be able to import the config without failing 1`] = `
+{
+  "@indiekit/store-file-system": {
+    "directory": "../ciccarello.me",
+    "name": "@indiekit/store-file-system",
+  },
+  "application": {
+    "mediaEndpoint": "/media-compressor",
+    "mongodbUrl": "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=indiekit",
+    "themeColor": "#af1e0b",
+  },
+  "plugins": [
+    "@indiekit/store-file-system",
+  ],
+  "publication": {
+    "categories": "http://localhost:8080/posts/tags/index.json",
+    "enrichPostData": true,
+    "me": "http://localhost:8080",
+    "postTemplate": [Function],
+    "postTypes": [
+      {
+        "media": {
+          "path": "assets/img/{filename}",
+        },
+        "name": "Blog",
+        "post": {
+          "path": "_posts/blog/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "blog/{yyyy}/{MM}/{dd}/{slug}",
+        },
+        "type": "article",
+      },
+      {
+        "media": {
+          "path": "assets/img/{filename}",
+        },
+        "name": "Recipe",
+        "post": {
+          "path": "_posts/recipes/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+        "type": "recipe",
+      },
+      {
+        "media": {
+          "path": "assets/img/{filename}",
+        },
+        "name": "Photo",
+        "post": {
+          "path": "_posts/photos/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+        "type": "photo",
+      },
+      {
+        "media": {
+          "path": "assets/img/{filename}",
+        },
+        "name": "Note",
+        "post": {
+          "path": "_posts/notes/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+        "type": "note",
+      },
+      {
+        "media": {
+          "path": "assets/img/{filename}",
+        },
+        "name": "Reply",
+        "post": {
+          "path": "_posts/replies/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+        "type": "reply",
+      },
+      {
+        "media": {
+          "path": "assets/img/{filename}",
+        },
+        "name": "Like",
+        "post": {
+          "path": "_posts/links/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+        "type": "like",
+      },
+      {
+        "media": {
+          "path": "assets/img/{filename}",
+        },
+        "name": "Bookmark",
+        "post": {
+          "path": "_posts/links/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+        "type": "bookmark",
+      },
+    ],
+  },
+}
+`;

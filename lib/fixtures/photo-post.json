@@ -1,0 +1,21 @@
+{
+  "type": "entry",
+  "post-type": "photo",
+  "content": {
+    "html": "<p>Draft post</p>",
+    "text": "Draft post"
+  },
+  "photo": [
+    {
+      "url": "/assets/img/8pzun.jpg",
+      "alt": "pumpkin bread on cutting board"
+    }
+  ],
+  "publication-date": "scheduled",
+  "published": "2023-11-09T10:10:00.000Z",
+  "visibility": "public",
+  "post-status": "draft",
+  "references": {},
+  "mp-slug": "noyzk",
+  "url": "http://localhost:8080/posts/2023/11/09/noyzk"
+}

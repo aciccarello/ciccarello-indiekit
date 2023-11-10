@@ -1,15 +1,10 @@
 // @ts-check
-try {
-  require("dotenv").config();
-} catch (e) {
-  if (e?.code === "MODULE_NOT_FOUND") {
-    console.warn(
-      "Not using dotenv because the module was not found. This is expected in a production environment"
-    );
-  } else {
-    console.warn("Error loading dotenv.", e);
-  }
-}
+import process from "node:process";
+import * as dotenv from "dotenv";
+// import mediaCompressor from "./media-compressor-endpoint";
+import postTemplate from "./lib/formatFile.js";
+
+dotenv.config();
 
 // Configure content store
 let store;
@@ -56,10 +51,11 @@ console.log(
   store
 );
 
-module.exports = {
-  plugins: [store.name],
+const config = {
+  plugins: [store.name /*mediaCompressor*/],
   application: {
     themeColor: "#af1e0b",
+    // mediaEndpoint: "/media-compressor",
     ...applicationConfig,
   },
   publication: {
@@ -110,7 +106,9 @@ module.exports = {
       },
     })),
 
-    postTemplate: require("./src/formatFile"),
+    postTemplate,
   },
   [store.name]: store,
 };
+
+export default config;
