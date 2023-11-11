@@ -22,7 +22,7 @@ switch (process.env.NODE_ENV) {
       name: "@indiekit/store-github",
       user: "aciccarello",
       repo: "ciccarello.me",
-      branch: "dev", // Will change this to "main" when production ready
+      branch: "main",
     };
     baseUrl = "https://www.ciccarello.me";
 
