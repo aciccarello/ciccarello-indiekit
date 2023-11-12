@@ -22,7 +22,7 @@
   "main": "indiekit.config.js",
   "type": "module",
   "scripts": {
-    "start": "TZ=utc indiekit serve",
+    "start": "TZ=utc indiekit serve --debug",
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
   },
   "dependencies": {
