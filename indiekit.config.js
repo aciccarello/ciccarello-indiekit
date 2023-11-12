@@ -102,7 +102,9 @@ const config = {
         url: `${typeConfig.post?.url ?? "posts"}/{yyyy}/{MM}/{dd}/{slug}`,
       },
       media: {
-        path: "assets/img/{filename}" /*, url: "/assets/img/{filename}"*/,
+        path: `assets/img/${
+          typeConfig.type == "recipe" ? "recipe-ik" : "{yyyy}-{DDD}"
+        }-{filename}`,
       },
     })),
 
