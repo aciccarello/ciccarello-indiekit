@@ -22,7 +22,7 @@ cd "$(dirname "$0")"
   fi
 
   # Start indiekit
-  npm install
+  npm install --fund=false --audit=false
   npm start
 
 } 2>&1 | tee -i start.log
