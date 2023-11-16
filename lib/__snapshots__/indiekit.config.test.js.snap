@@ -7,7 +7,6 @@ exports[`should be able to import the config without failing 1`] = `
     "name": "@indiekit/store-file-system",
   },
   "application": {
-    "mediaEndpoint": "/media-compressor",
     "mongodbUrl": "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=indiekit",
     "themeColor": "#af1e0b",
   },
@@ -22,7 +21,7 @@ exports[`should be able to import the config without failing 1`] = `
     "postTypes": [
       {
         "media": {
-          "path": "assets/img/{filename}",
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
         },
         "name": "Blog",
         "post": {
@@ -33,7 +32,7 @@ exports[`should be able to import the config without failing 1`] = `
       },
       {
         "media": {
-          "path": "assets/img/{filename}",
+          "path": "assets/img/recipe-ik-{filename}",
         },
         "name": "Recipe",
         "post": {
@@ -44,7 +43,7 @@ exports[`should be able to import the config without failing 1`] = `
       },
       {
         "media": {
-          "path": "assets/img/{filename}",
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
         },
         "name": "Photo",
         "post": {
@@ -55,7 +54,7 @@ exports[`should be able to import the config without failing 1`] = `
       },
       {
         "media": {
-          "path": "assets/img/{filename}",
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
         },
         "name": "Note",
         "post": {
@@ -66,7 +65,7 @@ exports[`should be able to import the config without failing 1`] = `
       },
       {
         "media": {
-          "path": "assets/img/{filename}",
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
         },
         "name": "Reply",
         "post": {
@@ -77,7 +76,7 @@ exports[`should be able to import the config without failing 1`] = `
       },
       {
         "media": {
-          "path": "assets/img/{filename}",
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
         },
         "name": "Like",
         "post": {
@@ -88,7 +87,7 @@ exports[`should be able to import the config without failing 1`] = `
       },
       {
         "media": {
-          "path": "assets/img/{filename}",
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
         },
         "name": "Bookmark",
         "post": {

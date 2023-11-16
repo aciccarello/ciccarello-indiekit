@@ -19,14 +19,17 @@ Draft post
 
 exports[`should fill in references from mastodon 1`] = `
 "---
-date: 2023-04-29T06:00:13.378Z
-eleventyExcludeFromCollections: draft
-slug: abcd
+date: 2023-03-09T03:23:02Z
+slug: sometimes-slack-is-fun
 like-of: https://fediverse.nicknisi.com/@nicknisi/109991177881690708
 references:
   - url: https://fediverse.nicknisi.com/@nicknisi/109991177881690708
-    name: "Nick Nisi :nicknisi: (@nicknisi@nicknisi.com)"
-    published: 2023-03-09T03:23:02Z
+    type: entry
+    author:
+      type: card
+      name: "Nick Nisi :nicknisi:"
+      nickname: "@nicknisi@nicknisi.com"
+      url: https://fediverse.nicknisi.com/@nicknisi
     content: |-
       Attached: 1 image
 
@@ -91,13 +94,13 @@ references:
 
         Too much context about my site building process
 
-        
+
 
       My site is built with Hugo, a static site generator known for being quite fast, and with a powerful (and challenging) templating system.
 
       I use my site for lots of stuff, which sometimes means showing content from other sites in my posts. For example:
 
-        
+
           Responses that…
 indiekit_post-type: bookmark
 
@@ -143,6 +146,10 @@ references:
     name: My source code root folder name
     type: entry
     published: 2023-04-18T00:00:00
+    author:
+      type: card
+      name: James' Coffee Blog ☕
+      url: https://jamesg.blog
     content: >-
       I like seeing what people call the root folder in which they store their
       source code. This is the folder where all — or a lot of — your projects

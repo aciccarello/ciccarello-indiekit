@@ -1,86 +1,22 @@
 {
-  "general": {
-    "appleTouchIcons": [
-      {
-        "href": "/packs/media/icons/apple-touch-icon-57x57-c9dca808280860c51d0357f6a3350f4d.png",
-        "sizes": "57x57"
-      },
-      {
-        "href": "/packs/media/icons/apple-touch-icon-60x60-bb247db195d9ee9d8c687b2b048508d9.png",
-        "sizes": "60x60"
-      },
-      {
-        "href": "/packs/media/icons/apple-touch-icon-72x72-799d90b81f5b28cea7355a0c0b356381.png",
-        "sizes": "72x72"
-      },
-      {
-        "href": "/packs/media/icons/apple-touch-icon-76x76-015d73d770413d121873193153ae4ab5.png",
-        "sizes": "76x76"
-      },
-      {
-        "href": "/packs/media/icons/apple-touch-icon-114x114-211e68807b8d15707666a8d326d338b1.png",
-        "sizes": "114x114"
-      },
-      {
-        "href": "/packs/media/icons/apple-touch-icon-120x120-4c4e647d758bf1b2f47a53e2165a01d2.png",
-        "sizes": "120x120"
-      },
-      {
-        "href": "/packs/media/icons/apple-touch-icon-144x144-ff3110f7772743bdd0c1c47fb7b2d4e0.png",
-        "sizes": "144x144"
-      },
-      {
-        "href": "/packs/media/icons/apple-touch-icon-152x152-b12cbb1baaf4a6111d0efd391fd829c9.png",
-        "sizes": "152x152"
-      },
-      {
-        "href": "/packs/media/icons/apple-touch-icon-167x167-6f21a68f6a05a8b5cf25b1729e553728.png",
-        "sizes": "167x167"
-      },
-      {
-        "href": "/packs/media/icons/apple-touch-icon-180x180-a75559a0af48064c1b7c71b81f3bf7c6.png",
-        "sizes": "180x180"
-      },
-      {
-        "href": "/packs/media/icons/apple-touch-icon-1024x1024-db6849588b44f525363c37b65ef0ac66.png",
-        "sizes": "1024x1024"
-      }
-    ],
-    "icons": [
-      { "href": "/favicon.ico", "type": "image/x-icon" },
-      {
-        "href": "/packs/media/icons/favicon-16x16-c58fdef40ced38d582d5b8eed9d15c5a.png",
-        "sizes": "16x16",
-        "type": "image/png"
-      },
-      {
-        "href": "/packs/media/icons/favicon-32x32-249409a6d9f300112c51af514d863112.png",
-        "sizes": "32x32",
-        "type": "image/png"
-      },
-      {
-        "href": "/packs/media/icons/favicon-48x48-c1197e9664ee6476d2715a1c4293bf61.png",
-        "sizes": "48x48",
-        "type": "image/png"
-      }
-    ],
-    "description": "Attached: 1 image\n\nSometimes Slack is fun.",
-    "title": "Nick Nisi :nicknisi:: \"Sometimes Slack is fun.\" - Nick Nisi",
-    "lang": "en"
-  },
-  "openGraph": {
-    "site_name": "Nick Nisi",
-    "type": "article",
-    "title": "Nick Nisi :nicknisi: (@nicknisi@nicknisi.com)",
-    "url": "https://fediverse.nicknisi.com/@nicknisi/109991177881690708",
-    "published_time": "2023-03-09T03:23:02Z",
-    "description": "Attached: 1 image\n\nSometimes Slack is fun.",
-    "image": {
-      "url": "https://cdn.masto.host/fediversenicknisicom/media_attachments/files/109/991/177/609/226/767/original/ab3c767ef8ba1b41.png",
-      "type": "image/png",
-      "width": "99",
-      "height": "151",
-      "alt": "the emoji for :karen: is a picture of elon musk."
+  "type": "entry",
+  "name": "Sometimes Slack is fun.",
+  "like-of": "https://fediverse.nicknisi.com/@nicknisi/109991177881690708",
+  "published": "2023-03-09T03:23:02Z",
+  "post-status": "published",
+  "visibility": "public",
+  "references": {
+    "https://fediverse.nicknisi.com/@nicknisi/109991177881690708": {
+      "url": "https://fediverse.nicknisi.com/@nicknisi/109991177881690708",
+      "type": "entry",
+      "name": "Nick Nisi :nicknisi: (@nicknisi@nicknisi.com)",
+      "TO_ADD_TO_METAFORMATS:nickname": "@nicknisi@nicknisi.com",
+      "summary": "Attached: 1 image\n\nSometimes Slack is fun.",
+      "featured": "https://cdn.masto.host/fediversenicknisicom/media_attachments/files/109/991/177/609/226/767/original/ab3c767ef8ba1b41.png",
+      "publication": "Nick Nisi"
     }
-  }
+  },
+  "mp-slug": "sometimes-slack-is-fun",
+  "post-type": "like",
+  "url": "https://dev.ciccarello.me/posts/2023/11/13/sometimes-slack-is-fun"
 }
