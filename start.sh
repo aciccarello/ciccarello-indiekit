@@ -3,18 +3,17 @@
 cd "$(dirname "$0")"
 
 {
-  # Make sure everything is up to date so don't need to log in to machine to update
-  git pull
-
   # Wait for internet to be available
-  # both cloudflare and indiekit will fail if not up
-  # which can happen when this runs on boot
+  # git, cloudflare, and indiekit all need the internet to be up
+  # which might not be true on start
   echo "Checking if ciccarello.me is available"
   while ! ping -c 1 -W 1 ciccarello.me; do
     echo "Retrying in 1 second"
     sleep 1
   done
 
+  # Make sure everything is up to date so don't need to log in to machine to update
+  git pull
 
   # Make sure cloudflare tunnel is up
   if pgrep -x cloudflared > /dev/null
