@@ -7,7 +7,6 @@ eleventyExcludeFromCollections: draft
 slug: noyzk
 image: /assets/img/8pzun.jpg
 image_alt: pumpkin bread on cutting board
-references: []
 indiekit_post-type: photo
 
 ---
@@ -23,7 +22,8 @@ date: 2023-03-09T03:23:02Z
 slug: sometimes-slack-is-fun
 like-of: https://fediverse.nicknisi.com/@nicknisi/109991177881690708
 references:
-  - url: https://fediverse.nicknisi.com/@nicknisi/109991177881690708
+  - referenceIdUrl: https://fediverse.nicknisi.com/@nicknisi/109991177881690708
+    url: https://fediverse.nicknisi.com/@nicknisi/109991177881690708
     type: entry
     author:
       type: card
@@ -49,7 +49,8 @@ eleventyExcludeFromCollections: draft
 slug: aaron-lawyer
 like-of: https://aaronparecki.com/2023/04/24/8/lawyer
 references:
-  - url: https://aaronparecki.com/2023/04/24/8/lawyer
+  - referenceIdUrl: https://aaronparecki.com/2023/04/24/8/lawyer
+    url: https://aaronparecki.com/2023/04/24/8/lawyer
     type: entry
     published: 2023-04-24T14:12:20-07:00
     author:
@@ -74,9 +75,10 @@ exports[`should modify the content from marty's post 1`] = `
 date: 2023-05-01T00:03:00.564Z
 title: Go time time
 slug: go-again-time
-bookmark-of: https://martymcgui.re/2023/03/19/go-time/
+bookmark-of: https://martymcgui.re/2023/03/19/go-time/?utm_medium=rss&utm_source=rss
 references:
-  - url: https://martymcgui.re/2023/03/19/go-time/
+  - referenceIdUrl: https://martymcgui.re/2023/03/19/go-time/?utm_medium=rss&utm_source=rss
+    url: https://martymcgui.re/2023/03/19/go-time/
     name: Go Time
     type: entry
     published: 2023-03-19T13:14:22-0400
@@ -94,13 +96,13 @@ references:
 
         Too much context about my site building process
 
-
+        
 
       My site is built with Hugo, a static site generator known for being quite fast, and with a powerful (and challenging) templating system.
 
       I use my site for lots of stuff, which sometimes means showing content from other sites in my posts. For example:
 
-
+        
           Responses that…
 indiekit_post-type: bookmark
 
@@ -118,7 +120,8 @@ title: David's Checkin
 slug: davids-checkin
 bookmark-of: https://david.shanske.com/2022/11/12/5771/
 references:
-  - url: https://david.shanske.com/2022/11/12/5771/
+  - referenceIdUrl: https://david.shanske.com/2022/11/12/5771/
+    url: https://david.shanske.com/2022/11/12/5771/
     post-type: checkin
     type: entry
     published: 2022-11-12T21:18:14-05:00
@@ -142,7 +145,8 @@ eleventyExcludeFromCollections: draft
 slug: abcd
 like-of: https://jamesg.blog/2023/04/18/source-code-folder-names/
 references:
-  - url: https://jamesg.blog/2023/04/18/source-code-folder-names/
+  - referenceIdUrl: https://jamesg.blog/2023/04/18/source-code-folder-names/
+    url: https://jamesg.blog/2023/04/18/source-code-folder-names/
     name: My source code root folder name
     type: entry
     published: 2023-04-18T00:00:00
