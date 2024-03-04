@@ -92,21 +92,24 @@ const config = {
           path: "links",
         },
       },
-    ].map((typeConfig) => ({
-      name: typeConfig.type[0].toUpperCase() + typeConfig.type.slice(1),
+    ].reduce((combinedConfig, { type, ...typeConfig }) => {
+      combinedConfig[type] = {
+        name: type[0].toUpperCase() + type.slice(1),
       ...typeConfig,
       post: {
         path: `_posts/${
-          typeConfig.post?.path ?? typeConfig.type + "s"
+            typeConfig.post?.path ?? type + "s"
         }/{yyyy}-{MM}-{dd}-{slug}.md`,
         url: `${typeConfig.post?.url ?? "posts"}/{yyyy}/{MM}/{dd}/{slug}`,
       },
       media: {
         path: `assets/img/${
-          typeConfig.type == "recipe" ? "recipe-ik" : "{yyyy}-{DDD}"
+            type == "recipe" ? "recipe-ik" : "{yyyy}-{DDD}"
         }-{filename}`,
       },
-    })),
+      };
+      return combinedConfig;
+    }, {}),
 
     postTemplate,
   },
