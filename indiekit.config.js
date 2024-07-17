@@ -1,7 +1,6 @@
 // @ts-check
 import process from "node:process";
 import * as dotenv from "dotenv";
-// import mediaCompressor from "./media-compressor-endpoint";
 import postTemplate from "./lib/formatFile.js";
 
 dotenv.config();
@@ -52,10 +51,9 @@ console.log(
 );
 
 const config = {
-  plugins: [store.name /*mediaCompressor*/],
+  plugins: [store.name, "@indiekit/endpoint-media"],
   application: {
     themeColor: "#af1e0b",
-    // mediaEndpoint: "/media-compressor",
     ...applicationConfig,
   },
   publication: {
@@ -71,7 +69,19 @@ const config = {
           url: "blog",
         },
       },
-      { type: "recipe" },
+      {
+        // Unfortunately this gets saved as a photo because of the lack of a post type discovery field
+        type: "recipe",
+        h: "recipe",
+        fields: {
+          name: { required: true },
+          content: { required: true },
+          date: { required: true },
+          photo: {},
+          category: {},
+          visibility: {},
+        },
+      },
       { type: "photo" },
       { type: "note" },
       {
@@ -95,18 +105,18 @@ const config = {
     ].reduce((combinedConfig, { type, ...typeConfig }) => {
       combinedConfig[type] = {
         name: type[0].toUpperCase() + type.slice(1),
-      ...typeConfig,
-      post: {
-        path: `_posts/${
+        ...typeConfig,
+        post: {
+          path: `_posts/${
             typeConfig.post?.path ?? type + "s"
-        }/{yyyy}-{MM}-{dd}-{slug}.md`,
-        url: `${typeConfig.post?.url ?? "posts"}/{yyyy}/{MM}/{dd}/{slug}`,
-      },
-      media: {
-        path: `assets/img/${
+          }/{yyyy}-{MM}-{dd}-{slug}.md`,
+          url: `${typeConfig.post?.url ?? "posts"}/{yyyy}/{MM}/{dd}/{slug}`,
+        },
+        media: {
+          path: `assets/img/${
             type == "recipe" ? "recipe-ik" : "{yyyy}-{DDD}"
-        }-{filename}`,
-      },
+          }-{filename}`,
+        },
       };
       return combinedConfig;
     }, {}),
@@ -114,6 +124,16 @@ const config = {
     postTemplate,
   },
   [store.name]: store,
+  "@indiekit/endpoint-media": {
+    imageProcessing: {
+      // See https://sharp.pixelplumbing.com/api-resize for options
+      resize: {
+        width: 2048,
+        fit: "inside",
+        withoutEnlargement: true, // don't want larger images smaller than width
+      },
+    },
+  },
 };
 
 export default config;
