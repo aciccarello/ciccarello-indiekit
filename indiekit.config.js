@@ -130,7 +130,7 @@ const config = {
       resize: {
         width: 2048,
         fit: "inside",
-        withoutEnlargement: true, // don't want larger images smaller than width
+        withoutEnlargement: true,
       },
     },
   },
