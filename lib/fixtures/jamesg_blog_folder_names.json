@@ -26,7 +26,7 @@
       ]
     }
   },
-  "mp-slug": "abcd",
+  "slug": "abcd",
   "published": "2023-04-29T06:00:13.378Z",
   "url": "http://localhost:8080/posts/2023/04/29/abcd"
 }

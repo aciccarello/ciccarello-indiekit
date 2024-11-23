@@ -3,12 +3,12 @@
 exports[`should create a photo post 1`] = `
 "---
 date: 2023-11-09T10:10:00.000Z
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 slug: noyzk
 image: /assets/img/8pzun.jpg
 image_alt: pumpkin bread on cutting board
 indiekit_post-type: photo
-
 ---
 
 Draft post
@@ -35,7 +35,6 @@ references:
 
       Sometimes Slack is fun.
 indiekit_post-type: like
-
 ---
 
 
@@ -45,7 +44,8 @@ indiekit_post-type: like
 exports[`should ignore properties from Aaron's post 1`] = `
 "---
 date: 2023-04-28T06:39:26.637Z
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 slug: aaron-lawyer
 like-of: https://aaronparecki.com/2023/04/24/8/lawyer
 references:
@@ -63,7 +63,6 @@ references:
     content: In retrospect, I probably didn't need to include "but I am not a
       lawyer" in an email to our lawyers
 indiekit_post-type: like
-
 ---
 
 
@@ -98,14 +97,15 @@ references:
 
         
 
-      My site is built with Hugo, a static site generator known for being quite fast, and with a powerful (and challenging) templating system.
+      My site is built with Hugo, a static site generator known for being quite
+      fast, and with a powerful (and challenging) templating system.
 
-      I use my site for lots of stuff, which sometimes means showing content from other sites in my posts. For example:
+      I use my site for lots of stuff, which sometimes means showing content
+      from other sites in my posts. For example:
 
         
           Responses that…
 indiekit_post-type: bookmark
-
 ---
 
 
@@ -115,7 +115,8 @@ indiekit_post-type: bookmark
 exports[`should process David's checkin 1`] = `
 "---
 date: 2023-04-28T06:46:25.459Z
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 title: David's Checkin
 slug: davids-checkin
 bookmark-of: https://david.shanske.com/2022/11/12/5771/
@@ -131,7 +132,6 @@ references:
       url: https://david.shanske.com/
       photo: https://david.shanske.com/avatar/dshanske?s=42
 indiekit_post-type: bookmark
-
 ---
 
 
@@ -141,7 +141,8 @@ indiekit_post-type: bookmark
 exports[`should process find the author in james' post 1`] = `
 "---
 date: 2023-04-29T06:00:13.378Z
-eleventyExcludeFromCollections: draft
+eleventyExcludeFromCollections: true
+eleventyExcludeFromCollectionsReason: draft
 slug: abcd
 like-of: https://jamesg.blog/2023/04/18/source-code-folder-names/
 references:
@@ -162,9 +163,9 @@ references:
       related to each other. I believe my source code files are in need of a
       spring clean.)
 
-      That long parenthetical notwithstanding, I find the name src cool. It’s a short way of saying source code; apt, simple, eas…
+      That long parenthetical notwithstanding, I find the name src cool. It’s a
+      short way of saying source code; apt, simple, eas…
 indiekit_post-type: like
-
 ---
 
 

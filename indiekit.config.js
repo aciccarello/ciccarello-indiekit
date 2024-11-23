@@ -107,7 +107,7 @@ const config = {
         name: type[0].toUpperCase() + type.slice(1),
         ...typeConfig,
         post: {
-          path: `_posts/${
+          path: `posts/${
             typeConfig.post?.path ?? type + "s"
           }/{yyyy}-{MM}-{dd}-{slug}.md`,
           url: `${typeConfig.post?.url ?? "posts"}/{yyyy}/{MM}/{dd}/{slug}`,

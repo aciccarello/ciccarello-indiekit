@@ -2,7 +2,7 @@
   "type": "entry",
   "post-type": "like",
   "like-of": "https://aaronparecki.com/2023/04/24/8/lawyer",
-  "mp-slug": "aaron-lawyer",
+  "slug": "aaron-lawyer",
   "visibility": "public",
   "post-status": "draft",
   "references": {

@@ -3,7 +3,7 @@
   "post-type": "bookmark",
   "bookmark-of": "https://martymcgui.re/2023/03/19/go-time/?utm_medium=rss&utm_source=rss",
   "name": "Go time time",
-  "mp-slug": "go-again-time",
+  "slug": "go-again-time",
   "visibility": "public",
   "post-status": "published",
   "references": {

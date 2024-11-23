@@ -2,6 +2,15 @@
 
 exports[`should be able to import the config without failing 1`] = `
 {
+  "@indiekit/endpoint-media": {
+    "imageProcessing": {
+      "resize": {
+        "fit": "inside",
+        "width": 2048,
+        "withoutEnlargement": true,
+      },
+    },
+  },
   "@indiekit/store-file-system": {
     "directory": "../ciccarello.me",
     "name": "@indiekit/store-file-system",
@@ -12,91 +21,100 @@ exports[`should be able to import the config without failing 1`] = `
   },
   "plugins": [
     "@indiekit/store-file-system",
+    "@indiekit/endpoint-media",
   ],
   "publication": {
     "categories": "http://localhost:8080/posts/tags/index.json",
     "enrichPostData": true,
     "me": "http://localhost:8080",
     "postTemplate": [Function],
-    "postTypes": [
-      {
+    "postTypes": {
+      "article": {
         "media": {
           "path": "assets/img/{yyyy}-{DDD}-{filename}",
         },
         "name": "Blog",
         "post": {
-          "path": "_posts/blog/{yyyy}-{MM}-{dd}-{slug}.md",
+          "path": "posts/blog/{yyyy}-{MM}-{dd}-{slug}.md",
           "url": "blog/{yyyy}/{MM}/{dd}/{slug}",
         },
-        "type": "article",
       },
-      {
-        "media": {
-          "path": "assets/img/recipe-ik-{filename}",
-        },
-        "name": "Recipe",
-        "post": {
-          "path": "_posts/recipes/{yyyy}-{MM}-{dd}-{slug}.md",
-          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
-        },
-        "type": "recipe",
-      },
-      {
-        "media": {
-          "path": "assets/img/{yyyy}-{DDD}-{filename}",
-        },
-        "name": "Photo",
-        "post": {
-          "path": "_posts/photos/{yyyy}-{MM}-{dd}-{slug}.md",
-          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
-        },
-        "type": "photo",
-      },
-      {
-        "media": {
-          "path": "assets/img/{yyyy}-{DDD}-{filename}",
-        },
-        "name": "Note",
-        "post": {
-          "path": "_posts/notes/{yyyy}-{MM}-{dd}-{slug}.md",
-          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
-        },
-        "type": "note",
-      },
-      {
-        "media": {
-          "path": "assets/img/{yyyy}-{DDD}-{filename}",
-        },
-        "name": "Reply",
-        "post": {
-          "path": "_posts/replies/{yyyy}-{MM}-{dd}-{slug}.md",
-          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
-        },
-        "type": "reply",
-      },
-      {
-        "media": {
-          "path": "assets/img/{yyyy}-{DDD}-{filename}",
-        },
-        "name": "Like",
-        "post": {
-          "path": "_posts/links/{yyyy}-{MM}-{dd}-{slug}.md",
-          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
-        },
-        "type": "like",
-      },
-      {
+      "bookmark": {
         "media": {
           "path": "assets/img/{yyyy}-{DDD}-{filename}",
         },
         "name": "Bookmark",
         "post": {
-          "path": "_posts/links/{yyyy}-{MM}-{dd}-{slug}.md",
+          "path": "posts/links/{yyyy}-{MM}-{dd}-{slug}.md",
           "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
         },
-        "type": "bookmark",
       },
-    ],
+      "like": {
+        "media": {
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
+        },
+        "name": "Like",
+        "post": {
+          "path": "posts/links/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
+      "note": {
+        "media": {
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
+        },
+        "name": "Note",
+        "post": {
+          "path": "posts/notes/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
+      "photo": {
+        "media": {
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
+        },
+        "name": "Photo",
+        "post": {
+          "path": "posts/photos/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
+      "recipe": {
+        "fields": {
+          "category": {},
+          "content": {
+            "required": true,
+          },
+          "date": {
+            "required": true,
+          },
+          "name": {
+            "required": true,
+          },
+          "photo": {},
+          "visibility": {},
+        },
+        "h": "recipe",
+        "media": {
+          "path": "assets/img/recipe-ik-{filename}",
+        },
+        "name": "Recipe",
+        "post": {
+          "path": "posts/recipes/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
+      "reply": {
+        "media": {
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
+        },
+        "name": "Reply",
+        "post": {
+          "path": "posts/replies/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
+    },
   },
 }
 `;
