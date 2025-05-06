@@ -1,5 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should create a listen-of post from an indiekit jam 1`] = `
+"---
+date: 2025-05-06T06:37:59.997Z
+slug: jam-kind-of-blue
+listen-of:
+  type: cite
+  url: https://en.wikipedia.org/wiki/Kind_of_Blue
+  name: Kind of Blue
+  author: Miles Davis
+tags:
+  - jam
+---
+
+🎵 Listening to [Kind of Blue](https://en.wikipedia.org/wiki/Kind_of_Blue) by Miles Davis.
+
+This is one of my all time favorite jazz albums.
+
+"
+`;
+
+exports[`should create a listen-of post from sparkles 1`] = `
+"---
+date: 2025-05-06T00:00:00.000Z
+slug: jam-kind-of-blue
+listen-of:
+  type: cite
+  name: Kind of Blue
+  photo: https://is1-ssl.mzstatic.com/image/thumb/Music/7f/9f/d6/mzi.vtnaewef.jpg/100x100bb.jpg
+  author: Miles Davis
+  uid: itunes:collection:268443092
+  url: https://album.link/us/i/268443092
+  published: "1959"
+tags:
+  - jam
+indiekit_excerpt: Listened to Kind of Blue by Miles Davis
+---
+
+🎵 Listening to [Kind of Blue](https://album.link/us/i/268443092) by Miles Davis.
+
+This is of my favorite jazz albums of all time. My parents got it for me when I was a kid playing trumpet in the school band. Compared to some of the other music I listen to, this album feels restrained but no less powerful.
+
+"
+`;
+
 exports[`should create a photo post 1`] = `
 "---
 date: 2023-11-09T10:10:00.000Z

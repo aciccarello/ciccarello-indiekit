@@ -1,0 +1,23 @@
+{
+  "type": "entry",
+  "summary": "Listened to Kind of Blue by Miles Davis",
+  "featured": "https://is1-ssl.mzstatic.com/image/thumb/Music/7f/9f/d6/mzi.vtnaewef.jpg/100x100bb.jpg",
+  "published": "2025-05-06T00:00:00.000Z",
+  "listen-of": {
+    "type": "cite",
+    "name": "Kind of Blue",
+    "photo": "https://is1-ssl.mzstatic.com/image/thumb/Music/7f/9f/d6/mzi.vtnaewef.jpg/100x100bb.jpg",
+    "author": "Miles Davis",
+    "uid": "itunes:collection:268443092",
+    "url": "https://album.link/us/i/268443092",
+    "published": "1959"
+  },
+  "progress": "finished",
+  "content": {
+    "html": "<p>This is of my favorite jazz albums of all time. My parents got it for me when I was a kid playing trumpet in the school band. Compared to some of the other music I listen to, this album feels restrained but no less powerful.</p>",
+    "text": "This is of my favorite jazz albums of all time. My parents got it for me when I was a kid playing trumpet in the school band. Compared to some of the other music I listen to, this album feels restrained but no less powerful."
+  },
+  "slug": "jam-kind-of-blue",
+  "url": "http://localhost:8080/posts/2025/05/06/jam-kind-of-blue",
+  "post-status": "published"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "entry",
+  "jam-of": {
+    "type": "cite",
+    "url": "https://en.wikipedia.org/wiki/Kind_of_Blue",
+    "name": "Kind of Blue",
+    "author": "Miles Davis"
+  },
+  "content": {
+    "html": "<p>This is one of my all time favorite jazz albums.</p>",
+    "text": "This is one of my all time favorite jazz albums."
+  },
+  "post-status": "published",
+  "published": "2025-05-06T06:37:59.997Z",
+  "slug": "jam-kind-of-blue",
+  "url": "http://localhost:8080/posts/2025/05/06/jam-kind-of-blue"
+}

@@ -51,7 +51,7 @@ console.log(
 );
 
 const config = {
-  plugins: [store.name, "@indiekit/endpoint-media"],
+  plugins: [store.name, "@indiekit/endpoint-media", "@indiekit/post-type-jam"],
   application: {
     themeColor: "#af1e0b",
     ...applicationConfig,
@@ -80,6 +80,20 @@ const config = {
           photo: {},
           category: {},
           visibility: {},
+        },
+      },
+      {
+        type: "listen",
+        discovery: "listen-of",
+        fields: {
+          date: { required: true },
+          content: {},
+        },
+      },
+      {
+        type: "jam",
+        post: {
+          path: "listens",
         },
       },
       { type: "photo" },

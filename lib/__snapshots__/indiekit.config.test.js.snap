@@ -22,6 +22,7 @@ exports[`should be able to import the config without failing 1`] = `
   "plugins": [
     "@indiekit/store-file-system",
     "@indiekit/endpoint-media",
+    "@indiekit/post-type-jam",
   ],
   "publication": {
     "categories": "http://localhost:8080/posts/tags/index.json",
@@ -49,6 +50,16 @@ exports[`should be able to import the config without failing 1`] = `
           "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
         },
       },
+      "jam": {
+        "media": {
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
+        },
+        "name": "Jam",
+        "post": {
+          "path": "posts/listens/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
       "like": {
         "media": {
           "path": "assets/img/{yyyy}-{DDD}-{filename}",
@@ -56,6 +67,23 @@ exports[`should be able to import the config without failing 1`] = `
         "name": "Like",
         "post": {
           "path": "posts/links/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
+      "listen": {
+        "discovery": "listen-of",
+        "fields": {
+          "content": {},
+          "date": {
+            "required": true,
+          },
+        },
+        "media": {
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
+        },
+        "name": "Listen",
+        "post": {
+          "path": "posts/listens/{yyyy}-{MM}-{dd}-{slug}.md",
           "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
         },
       },
