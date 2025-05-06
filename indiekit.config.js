@@ -96,6 +96,13 @@ const config = {
           path: "listens",
         },
       },
+      {
+        type: "read",
+        discovery: "read-of",
+        post: {
+          path: "reads",
+        },
+      },
       { type: "photo" },
       { type: "note" },
       {

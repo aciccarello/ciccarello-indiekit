@@ -107,6 +107,17 @@ exports[`should be able to import the config without failing 1`] = `
           "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
         },
       },
+      "read": {
+        "discovery": "read-of",
+        "media": {
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
+        },
+        "name": "Read",
+        "post": {
+          "path": "posts/reads/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
       "recipe": {
         "fields": {
           "category": {},
