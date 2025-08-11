@@ -51,7 +51,7 @@ console.log(
 );
 
 const config = {
-  plugins: [store.name, "@indiekit/endpoint-media", "@indiekit/post-type-jam"],
+  plugins: [store.name, "@indiekit/post-type-jam"],
   application: {
     themeColor: "#af1e0b",
     ...applicationConfig,
