@@ -17,7 +17,7 @@
   },
   "homepage": "https://indiekit.ciccarello.me",
   "engines": {
-    "node": "^22"
+    "node": "^24"
   },
   "main": "indiekit.config.js",
   "type": "module",
