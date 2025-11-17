@@ -103,6 +103,20 @@ const config = {
           path: "reads",
         },
       },
+      {
+        type: "watch",
+        discovery: "watch-of",
+        post: {
+          path: "watches",
+        },
+      },
+      {
+        type: "play",
+        discovery: "play-of",
+        post: {
+          path: "plays",
+        },
+      },
       { type: "photo" },
       { type: "note" },
       {
@@ -121,6 +135,14 @@ const config = {
         type: "bookmark",
         post: {
           path: "links",
+        },
+      },
+      {
+        type: "food",
+        fields: {
+          date: { required: true },
+          url: {},
+          content: {},
         },
       },
     ].reduce((combinedConfig, { type, ...typeConfig }) => {
