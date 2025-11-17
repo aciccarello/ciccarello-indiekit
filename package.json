@@ -31,7 +31,7 @@
     "@indiekit/post-type-jam": "^1.0.0-beta.21",
     "@indiekit/store-file-system": "^1.0.0-beta.21",
     "@indiekit/store-github": "^1.0.0-beta.21",
-    "dotenv": "^17.2.1",
+    "dotenv": "^17.2.3",
     "html-metadata": "^3.0.1",
     "jest": "^30.0.5",
     "yaml": "^2.8.1"
