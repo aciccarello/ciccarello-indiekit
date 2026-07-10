@@ -27,13 +27,22 @@
   },
   "dependencies": {
     "@indiekit/endpoint-media": "./lib/endpoint-media",
-    "@indiekit/indiekit": "^1.0.0-beta.24",
-    "@indiekit/post-type-jam": "^1.0.0-beta.21",
-    "@indiekit/store-file-system": "^1.0.0-beta.21",
-    "@indiekit/store-github": "^1.0.0-beta.21",
-    "dotenv": "^17.2.3",
+    "@indiekit/indiekit": "^1.0.0-beta.28",
+    "@indiekit/post-type-jam": "^1.0.0-beta.28",
+    "@indiekit/store-file-system": "^1.0.0-beta.28",
+    "@indiekit/store-github": "^1.0.0-beta.28",
+    "dotenv": "^17.4.2",
     "html-metadata": "^3.0.1",
-    "jest": "^30.0.5",
-    "yaml": "^2.8.1"
+    "jest": "^30.4.2",
+    "yaml": "^2.9.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "sharp@0.35.3": true,
+    "sharp@0.34.5": true,
+    "fsevents@2.3.3": true,
+    "bcrypt@6.0.0": true,
+    "@parcel/watcher@2.5.6": true,
+    "unrs-resolver@1.12.2": true
   }
 }

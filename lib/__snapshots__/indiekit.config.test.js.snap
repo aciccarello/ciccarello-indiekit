@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`should be able to import the config without failing 1`] = `
 {
@@ -16,12 +16,10 @@ exports[`should be able to import the config without failing 1`] = `
     "name": "@indiekit/store-file-system",
   },
   "application": {
-    "mongodbUrl": "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=indiekit",
     "themeColor": "#af1e0b",
   },
   "plugins": [
     "@indiekit/store-file-system",
-    "@indiekit/endpoint-media",
     "@indiekit/post-type-jam",
   ],
   "publication": {
@@ -47,6 +45,23 @@ exports[`should be able to import the config without failing 1`] = `
         "name": "Bookmark",
         "post": {
           "path": "posts/links/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
+      "food": {
+        "fields": {
+          "content": {},
+          "date": {
+            "required": true,
+          },
+          "url": {},
+        },
+        "media": {
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
+        },
+        "name": "Food",
+        "post": {
+          "path": "posts/foods/{yyyy}-{MM}-{dd}-{slug}.md",
           "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
         },
       },
@@ -107,6 +122,17 @@ exports[`should be able to import the config without failing 1`] = `
           "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
         },
       },
+      "play": {
+        "discovery": "play-of",
+        "media": {
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
+        },
+        "name": "Play",
+        "post": {
+          "path": "posts/plays/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
       "read": {
         "discovery": "read-of",
         "media": {
@@ -150,6 +176,17 @@ exports[`should be able to import the config without failing 1`] = `
         "name": "Reply",
         "post": {
           "path": "posts/replies/{yyyy}-{MM}-{dd}-{slug}.md",
+          "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
+        },
+      },
+      "watch": {
+        "discovery": "watch-of",
+        "media": {
+          "path": "assets/img/{yyyy}-{DDD}-{filename}",
+        },
+        "name": "Watch",
+        "post": {
+          "path": "posts/watches/{yyyy}-{MM}-{dd}-{slug}.md",
           "url": "posts/{yyyy}/{MM}/{dd}/{slug}",
         },
       },
