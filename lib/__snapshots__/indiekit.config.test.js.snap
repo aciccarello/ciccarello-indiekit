@@ -2,6 +2,19 @@
 
 exports[`should be able to import the config without failing 1`] = `
 {
+  "@aciccarello/endpoint-micropub-syndication": {
+    "targets": [
+      {
+        "checked": false,
+        "name": "IndieNews",
+        "service": {
+          "name": "IndieNews",
+          "url": "https://news.indieweb.org/en",
+        },
+        "uid": "https://news.indieweb.org/en",
+      },
+    ],
+  },
   "@indiekit/endpoint-media": {
     "imageProcessing": {
       "resize": {
@@ -20,6 +33,7 @@ exports[`should be able to import the config without failing 1`] = `
   },
   "plugins": [
     "@indiekit/store-file-system",
+    "@aciccarello/endpoint-micropub-syndication",
     "@indiekit/post-type-jam",
   ],
   "publication": {

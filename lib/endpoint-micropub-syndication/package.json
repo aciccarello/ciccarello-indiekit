@@ -1,0 +1,8 @@
+{
+  "name": "@aciccarello/endpoint-micropub-syndication",
+  "version": "1.0.0",
+  "description": "Preprocess Micropub requests to map selected syndication targets",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT"
+}

@@ -51,7 +51,11 @@ console.log(
 );
 
 const config = {
-  plugins: [store.name, "@indiekit/post-type-jam"],
+  plugins: [
+store.name,
+    "@aciccarello/endpoint-micropub-syndication",
+"@indiekit/post-type-jam",
+],
   application: {
     themeColor: "#af1e0b",
     ...applicationConfig,
@@ -176,6 +180,19 @@ const config = {
         withoutEnlargement: true,
       },
     },
+  },
+"@aciccarello/endpoint-micropub-syndication": {
+    targets: [
+      {
+        checked: false,
+        name: "IndieNews",
+        uid: "https://news.indieweb.org/en",
+        service: {
+          name: "IndieNews",
+          url: "https://news.indieweb.org/en",
+        },
+      },
+    ],
   },
 };
 
