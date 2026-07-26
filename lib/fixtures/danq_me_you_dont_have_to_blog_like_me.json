@@ -1,0 +1,174 @@
+{
+  "type": "entry",
+  "bookmark-of": "https://danq.me/2026/07/02/you-dont-have-to-blog-like-me/",
+  "name": "You don’t have to blog like me – Dan Q",
+  "content": {
+    "html": "<p>This is your reminder that having a personal website entitles you to blog however you want. There are lots of patterns communities have developed but it’s basically all optional. The internet is yours!</p>",
+    "text": "This is your reminder that having a personal website entitles you to blog however you want. There are lots of patterns communities have developed but it's basically all optional. The internet is yours!"
+  },
+  "category": [
+    "IndieWeb"
+  ],
+  "syndication": [
+    "https://news.indieweb.org/en"
+  ],
+  "references": {
+    "https://danq.me/2026/07/02/you-dont-have-to-blog-like-me/": {
+      "url": "https://danq.me/2026/07/02/you-dont-have-to-blog-like-me/",
+      "children": [
+        {
+          "type": "card",
+          "logo": "https://danq.me/2026/07/02/you-dont-have-to-blog-like-me/",
+          "name": "Dan Q",
+          "given-name": "Dan",
+          "family-name": "Q"
+        },
+        {
+          "type": "entry",
+          "name": "You don’t have to blog like me",
+          "author": {
+            "children": [
+              {
+                "type": "card",
+                "name": "Dan Q",
+                "url": "https://danq.me/"
+              },
+              {
+                "type": "card",
+                "url": "https://antoniosantos.io/",
+                "name": "Antonio\n                      Santos"
+              }
+            ]
+          },
+          "syndication": [
+            "https://www.facebook.com/1353711854741727/posts/2217015762419682",
+            "https://scatmania.livejournal.com/333322.html",
+            "http://telegram.me/DanQBlog",
+            "https://www.tumblr.com/blog/view/t:xgBKtxoVfjY-DL6ktwKBCw/821048571864498176",
+            "https://m.danq.me/@dan/116851545178490839",
+            "https://m.danq.me/@blog/116851546685109965",
+            "https://m.danq.me/@blog/116851546685109965",
+            "https://m.danq.me/@dan/116851545178490839",
+            "https://www.facebook.com/1353711854741727/posts/2217015762419682",
+            "https://scatmania.livejournal.com/333322.html",
+            "https://www.tumblr.com/blog/view/t:xgBKtxoVfjY-DL6ktwKBCw/821048571864498176",
+            "gemini://danq.me/posts/you-dont-have-to-blog-like-me",
+            "spartan://danq.me/posts/you-dont-have-to-blog-like-me",
+            "gopher://danq.me/1/posts/you-dont-have-to-blog-like-me",
+            "finger://you-dont-have-to-blog-like-me@danq.me",
+            "https://t.me/DanQBlog"
+          ],
+          "published": [
+            "2026-07-02T18:21:26+01:00",
+            "2026-07-02T18:21:26+01:00",
+            "2026-07-02T18:21:26+01:00"
+          ],
+          "url": "https://antoniosantos.io/re-you-dont-have-to-blog-like-me/"
+        },
+        {
+          "type": "card",
+          "name": "G",
+          "url": "https://www.gordonmclean.co.uk"
+        },
+        {
+          "type": "card",
+          "name": "Dan Q",
+          "url": "https://danq.me/"
+        },
+        {
+          "type": "card",
+          "name": "juanp32",
+          "url": "https://ihatetehbsod.neocities.org/"
+        },
+        {
+          "type": "card",
+          "name": "Dan Q",
+          "url": "https://danq.me/"
+        },
+        {
+          "type": "card",
+          "name": "candycane",
+          "url": "https://candyether.space"
+        },
+        {
+          "type": "card",
+          "name": "Dan Q",
+          "url": "https://danq.me/"
+        },
+        {
+          "type": "card",
+          "name": "Ian",
+          "url": "http://shojiwax.com"
+        },
+        {
+          "type": "card",
+          "name": "Dan Q",
+          "url": "https://danq.me/"
+        },
+        {
+          "type": "card",
+          "name": "Colin Walker",
+          "url": "https://colinwalker.blog"
+        },
+        {
+          "type": "card",
+          "name": "Dan Q",
+          "url": "https://danq.me/"
+        },
+        {
+          "type": "card",
+          "name": "256",
+          "url": "https://256-32.com/"
+        },
+        {
+          "type": "card",
+          "name": "Dan Q",
+          "url": "https://danq.me/"
+        },
+        {
+          "type": "card",
+          "name": "Sol Nova",
+          "url": "http://solnova.me/"
+        },
+        {
+          "type": "card",
+          "name": "Dan Q",
+          "url": "https://danq.me/"
+        },
+        {
+          "type": "card",
+          "name": "Snow"
+        },
+        {
+          "type": "card",
+          "name": "Terence Eden",
+          "url": "https://mastodon.social/@Edent/116884227816121250"
+        },
+        {
+          "type": "card",
+          "name": "Krazov",
+          "url": "https://krazov.com"
+        },
+        {
+          "type": "card",
+          "name": "Dan Q",
+          "url": "https://danq.me/"
+        },
+        {
+          "type": "card",
+          "name": "Varun Barad",
+          "url": "https://varunbarad.com"
+        },
+        {
+          "type": "card",
+          "name": "Dan Q",
+          "url": "https://danq.me/"
+        }
+      ]
+    }
+  },
+  "published": "2026-07-26T02:19:14.158Z",
+  "slug": "you-dont-have-to-blog-like-me",
+  "url": "http://localhost:8080/posts/2026/07/26/you-dont-have-to-blog-like-me",
+  "post-status": "published"
+}
