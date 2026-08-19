@@ -28,10 +28,10 @@
   "dependencies": {
     "@aciccarello/endpoint-micropub-syndication": "./lib/endpoint-micropub-syndication",
     "@indiekit/endpoint-media": "./lib/endpoint-media",
-    "@indiekit/indiekit": "^1.0.0-beta.28",
-    "@indiekit/post-type-jam": "^1.0.0-beta.28",
+    "@indiekit/indiekit": "^1.0.0-beta.29",
+    "@indiekit/post-type-jam": "^1.0.0-beta.29",
     "@indiekit/store-file-system": "^1.0.0-beta.28",
-    "@indiekit/store-github": "^1.0.0-beta.28",
+    "@indiekit/store-github": "^1.0.0-beta.29",
     "dotenv": "^17.4.2",
     "html-metadata": "^3.0.1",
     "jest": "^30.4.2",
