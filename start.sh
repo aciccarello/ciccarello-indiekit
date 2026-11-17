@@ -30,6 +30,11 @@ cd "$(dirname "$0")"
     fi
   fi
 
+  # Setup node
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  nvm use
+
   # Start indiekit
   npm install --fund=false --audit=false
   npm start
